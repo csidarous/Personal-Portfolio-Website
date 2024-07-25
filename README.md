@@ -29,6 +29,6 @@ Check out the live demo of my portfolio website [here](https://chrstophersidarou
 - **Material UI:** A popular React UI framework for creating responsive and visually appealing designs.
 - **Hostinger:** Web hosting service.
 
-##Contact
+## Contact
 
 Feel free to reach out to me via email at sidarousca@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/csidarous/).
