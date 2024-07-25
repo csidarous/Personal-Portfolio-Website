@@ -11,7 +11,7 @@ Welcome to my portfolio website! This website is a showcase of my skills, experi
 
 ## Live Demo
 
-Check out the live demo of my portfolio website [here]([https://yourwebsite.com](https://chrstophersidarousportfolio.com/about)).
+Check out the live demo of my portfolio website [here](https://chrstophersidarousportfolio.com).
 
 ## Features
 
@@ -26,8 +26,9 @@ Check out the live demo of my portfolio website [here]([https://yourwebsite.com]
 - **React:** A JavaScript library for building user interfaces.
 - **JavaScript:** The programming language used for the functionality.
 - **CSS:** For styling the website.
+- **Material UI:** A popular React UI framework for creating responsive and visually appealing designs.
 - **Hostinger:** Web hosting service.
 
 ##Contact
 
-Feel free to reach out to me via email at your.email@example.com or connect with me on [LinkedIn](https://www.linkedin.com/in/csidarous/).
+Feel free to reach out to me via email at sidarousca@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/csidarous/).
