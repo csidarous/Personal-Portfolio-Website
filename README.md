@@ -31,11 +31,11 @@ Check out the live demo of my portfolio website [here](https://chrstophersidarou
 - **Material UI:** A popular React UI framework for creating responsive and visually appealing designs.
 - **Hostinger:** Web hosting service.
 
-##Future Plans
+## Future Plans
 I am continually working to improve and expand my portfolio website. Here are some future plans:
 
 - **Contact Page:** Implementing a dedicated contact page through a Node.js backend to handle form submissions securely and efficiently.
-- **Future Projects:**Adding new projects that showcase my latest work and skills development.
+- **Future Projects:** Adding new projects that showcase my latest work and skills development.
 - **Blog or Newsletter:** Introducing a blog or newsletter to share insights, experiences, and updates about my journey in tech, including academic and career milestones.
 
 Stay tuned for more updates and features as I continue to enhance the site!
