@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
+import { List, ListItem, ListItemText, ListItemIcon, Box, Typography, Button } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { styled } from '@mui/system';
 import TrackVisibility from 'react-on-screen';
 import resumeIMG from '../assets/img/portimg.png';
@@ -79,10 +80,9 @@ const ReverseSection = styled(Box)(({ theme }) => ({
 }));
 
 const monthlyUpdates = [
-  '1. Working on a new Data Science project that involves predictive analytics.',
-  '2. Reading "Deep Learning with Python" by François Chollet.',
-  '3. Gardening and experimenting with new plants.',
-  '4. Enhancing my portfolio with new AI projects.'
+  '1. Working on Google Data Analytics Certificate.',
+  '2. Enhancing my portfolio with new AI projects through Headstarter AI Fellow.',
+  '3. Volunteering for Philly Community Wireless working with Dat Visualizations',
 ];
 
 export const Home = () => {
@@ -128,7 +128,7 @@ export const Home = () => {
                 </SectionContent>
               </MonthlyUpdateSection>
               <Button onClick={handleScrollToResume} variant="contained" color="primary" sx={{ marginTop: 4 }}>
-                Resume
+                Go To Resume
               </Button>
             </BackgroundBox>
           )}
@@ -182,7 +182,34 @@ export const Home = () => {
           <InfoBox>
             <SectionTitle variant="h2">Career Goals & Accomplishments</SectionTitle>
             <SectionContent>
-              Describe your career goals and accomplishments here...
+            <List>
+        <ListItem>
+          <ListItemIcon>
+            <CheckCircleIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText primary="Achieving Google Analytics Certificate" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckCircleIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText primary="Participating in CodePath Interview Prep (TIP 101)" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckCircleIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText 
+            primary="Attended SheInnovates Hackathon"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckCircleIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText primary="Headstarter Fellow" />
+        </ListItem>
+      </List>
             </SectionContent>
           </InfoBox>
           <Button onClick={() => handleNavigation('/about')} variant="contained" color="primary" sx={{ marginTop: 4 }}>

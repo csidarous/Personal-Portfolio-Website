@@ -41,7 +41,7 @@ export const NavBar = ({ setActiveSection }) => {
           <Nav className="ms-auto">
             <div className="nav-link navbar-link" onClick={() => handleNavigation('/about')}>About</div>
             <div className="nav-link navbar-link" onClick={() => handleNavigation('/projects')}>Projects</div>
-            <div className="nav-link navbar-link" onClick={() => handleNavigation('/contact')}>Contact</div>
+            {/* <div className="nav-link navbar-link" onClick={() => handleNavigation('/contact')}>Contact</div> Working on backend server implementation later*/} 
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
