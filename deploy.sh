@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Navigate to the project directory
 cd /public_html
 # Pull the latest changes from GitHub
