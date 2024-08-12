@@ -7,7 +7,9 @@ Welcome to my portfolio website! This website is a showcase of my skills, experi
 - [Live Demo](#live-demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Future Plans](#future-plans)
 - [Contact](#contact)
+
 
 ## Live Demo
 
@@ -28,6 +30,17 @@ Check out the live demo of my portfolio website [here](https://chrstophersidarou
 - **CSS:** For styling the website.
 - **Material UI:** A popular React UI framework for creating responsive and visually appealing designs.
 - **Hostinger:** Web hosting service.
+
+## Future Plans
+I am continually working to improve and expand my portfolio website. Here are some future plans:
+
+- **Contact Page:** Implementing a dedicated contact page through a Node.js backend to handle form submissions securely and efficiently.
+- **Future Projects:** Adding new projects that showcase my latest work and skills development.
+- **Blog or Newsletter:** Introducing a blog or newsletter to share insights, experiences, and updates about my journey in tech, including academic and career milestones.
+- **Mobile Setting:** Creating website that is also tailored to Mobile users.
+- **Color Scheme:** Update color schemes to make more presentable and appealable to all users.
+
+Stay tuned for more updates and features as I continue to enhance the site!
 
 ## Contact
 
