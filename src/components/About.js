@@ -56,19 +56,19 @@ const skills = {
 
 const experiences = [
   {
+    title: 'Undergraduate Teaching Assistant(UTA) @ University of Pittsburgh',
+    date: 'August 2022 - Present',
+    description: 'Assisting professors in teaching undergraduate courses and providing support to students.'
+  },
+  {
     title: 'Software Engineering Fellow @ Headstarter AI',
-    date: 'July 2024 - Present',
+    date: 'July 2024 - September 2024',
     description: 'Participated in the Headstarter Fellowship program focusing on leadership and innovation.'
   },
   {
     title: 'Volunteer @ Philly Community Wireless(PCW)',
-    date: 'May 2024 - Present',
-    description: 'Volunteered at PCW, contributing to community projects and assisting in various initiatives.'
-  },
-  {
-    title: 'Undergraduate Teaching Assistant(UTA) @ University of Pittsburgh',
-    date: 'August 2022 - Present',
-    description: 'Assisted professors in teaching undergraduate courses, grading assignments, and providing support to students.'
+    date: 'May 2024 - August 2024',
+    description: 'Volunteered at PCW, contributing to community projects and assisting in various Data initiatives.'
   },
   {
     title: 'Machine Learning Capstone for ThermoFisher @ University of Pittsburg',

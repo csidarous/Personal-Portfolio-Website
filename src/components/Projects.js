@@ -7,6 +7,9 @@ import path_to_image3 from '../assets/img/feline_good.png';
 import path_to_image4 from '../assets/img/portfolioProj.png';
 import path_to_image5 from '../assets/img/ppg_project.png';
 import path_to_image6 from '../assets/img/ThermoFisher.jpg';
+import path_to_image7 from '../assets/img/FlashGenie.png';
+
+
 
 const projects = [
   {
@@ -56,6 +59,14 @@ const projects = [
     category: "Machine-Learning",
     codeurl:"",
     skills: ['Python', 'DataBricks', 'Scikit-Learn', 'Collaboration']
+  },
+  {
+    title: "FlashGenie ",
+    description: "This was a personal project done during Headstarter Fellowship. This is an innovative application designed to enhance the learning experience through interactive, AI-powered flashcards.",
+    imgUrl: path_to_image7,
+    category: "Web-Dev/Software-Dev",
+    codeurl:"https://github.com/csidarous/Flash_Genie",
+    skills: ['Firebase', 'React', 'Next.js', 'Stripe']
   },
   // Add more projects here
 ];

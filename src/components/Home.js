@@ -80,25 +80,25 @@ const ReverseSection = styled(Box)(({ theme }) => ({
 }));
 
 const monthlyUpdates = [
-  '1. Working on Google Data Analytics Certificate.',
-  '2. Enhancing my portfolio with new AI projects through Headstarter AI Fellow.',
-  '3. Volunteering for Philly Community Wireless working with Dat Visualizations',
+  '1. Pursuing the Google Data Analytics Certificate.',
+  '2. Currently enrolled in 13 credits at the University of Pittsburgh.',
+  '3. Actively seeking full-time roles in Data Analytics, Software Engineering, or Machine Learning after Spring 2025 graduation.',
 ];
 
 export const Home = () => {
+  const navigate = useNavigate();
+
   const handleScrollToResume = () => {
     document.getElementById('resume-section').scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleScrollToLinkdn = () => {
-    document.getElementById('lnkd').scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToLinkedIn = () => {
+    document.getElementById('linkedin-section').scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleScrollToCareer= () => {
-    document.getElementById('career').scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToCareer = () => {
+    document.getElementById('career-section').scrollIntoView({ behavior: 'smooth' });
   };
-
-  const navigate = useNavigate();
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -111,16 +111,10 @@ export const Home = () => {
         <TrackVisibility>
           {({ isVisible }) => (
             <BackgroundBox className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-              <HelloText variant="h1">
-                Hello,
-              </HelloText>
-              <NameText variant="h2">
-                My name is Christopher Sidarous
-              </NameText>
+              <HelloText variant="h1">Hello,</HelloText>
+              <NameText variant="h2">I'm Christopher Sidarous</NameText>
               <MonthlyUpdateSection>
-                <SectionTitle variant="h2">
-                  What I'm up to this month
-                </SectionTitle>
+                <SectionTitle variant="h2">This Month's Focus</SectionTitle>
                 <SectionContent>
                   {monthlyUpdates.map((update, index) => (
                     <p key={index}>{update}</p>
@@ -128,7 +122,7 @@ export const Home = () => {
                 </SectionContent>
               </MonthlyUpdateSection>
               <Button onClick={handleScrollToResume} variant="contained" color="primary" sx={{ marginTop: 4 }}>
-                Go To Resume
+                View My Resume
               </Button>
             </BackgroundBox>
           )}
@@ -138,7 +132,7 @@ export const Home = () => {
       <section id="resume-section">
         <ResumeSection>
           <ImageBox>
-            <img src={resumeIMG} alt="" />
+            <img src={resumeIMG} alt="Resume Preview" />
           </ImageBox>
           <InfoBox>
             <SectionTitle variant="h2">Resume</SectionTitle>
@@ -151,72 +145,75 @@ export const Home = () => {
               Download My Resume
             </Button>
           </InfoBox>
-          <Button onClick={handleScrollToLinkdn} variant="contained" color="primary" sx={{ marginTop: 4 }}>
-              Go To Linkdin
+          <Button onClick={handleScrollToLinkedIn} variant="contained" color="primary" sx={{ marginTop: 4 }}>
+            View LinkedIn Profile
           </Button>
         </ResumeSection>
-        </section>
+      </section>
 
-        <section id="lnkd">
+      <section id="linkedin-section">
         <ReverseSection>
           <InfoBox>
             <SectionTitle variant="h2">LinkedIn</SectionTitle>
-            <Button variant="contained" color="primary"href="https://www.linkedin.com/in/yourprofile" target="_blank">
-              Visit my LinkedIn profile
+            <Button
+              variant="contained"
+              color="primary"
+              href="https://www.linkedin.com/in/csidarous/"
+              target="_blank"
+            >
+              Visit My LinkedIn
             </Button>
           </InfoBox>
           <ImageBox>
-            <img src={pittIMG} alt="" />
+            <img src={pittIMG} alt="Pitt Logo" />
           </ImageBox>
           <Button onClick={handleScrollToCareer} variant="contained" color="primary" sx={{ marginTop: 4 }}>
-              More Info
+            Learn More About My Career
           </Button>
         </ReverseSection>
-        </section>
+      </section>
 
-        <section id="career">
+      <section id="career-section">
         <ResumeSection>
           <ImageBox>
-            <img src={careerIMG} alt="" />
+            <img src={careerIMG} alt="Career Accomplishments" />
           </ImageBox>
           <InfoBox>
-            <SectionTitle variant="h2">Career Goals & Accomplishments</SectionTitle>
+            <SectionTitle variant="h2">Career Goals & Achievements</SectionTitle>
             <SectionContent>
-            <List>
-        <ListItem>
-          <ListItemIcon>
-            <CheckCircleIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText primary="Achieving Google Analytics Certificate" />
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <CheckCircleIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText primary="Participating in CodePath Interview Prep (TIP 101)" />
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <CheckCircleIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText 
-            primary="Attended SheInnovates Hackathon"
-          />
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <CheckCircleIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText primary="Headstarter Fellow" />
-        </ListItem>
-      </List>
+              <List>
+                <ListItem>
+                  <ListItemIcon>
+                    <CheckCircleIcon color="primary" />
+                  </ListItemIcon>
+                  <ListItemText primary="ThermoFisher Capstone Project (Spring 2024)" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <CheckCircleIcon color="primary" />
+                  </ListItemIcon>
+                  <ListItemText primary="Completed CodePath Interview Prep (TIP 101) ~Summer 2024" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <CheckCircleIcon color="primary" />
+                  </ListItemIcon>
+                  <ListItemText primary="SheInnovates Hackathon Student Choice Award ~Spring 2023" />
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <CheckCircleIcon color="primary" />
+                  </ListItemIcon>
+                  <ListItemText primary="Headstarter AI Software Engineering Fellow ~Summer 2024" />
+                </ListItem>
+              </List>
             </SectionContent>
           </InfoBox>
           <Button onClick={() => handleNavigation('/about')} variant="contained" color="primary" sx={{ marginTop: 4 }}>
-              Learn More About Me
+            Learn More About Me
           </Button>
         </ResumeSection>
-        </section>
+      </section>
     </>
   );
 };

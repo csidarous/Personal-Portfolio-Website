@@ -18,9 +18,8 @@ export const Footer = () => {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <br></br>
           <Col xs={12} className="text-center mt-3">
-            <p>&copy; 2024 All Rights Reserved.</p>
+            <p>&copy; 2024 Christopher Sidarous</p>
           </Col>
         </Row>
       </Container>
